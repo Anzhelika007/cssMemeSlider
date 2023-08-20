@@ -5,6 +5,7 @@
     --bg-color-container: #F3F3F4;
     --bg-color-slider: #25282A;
     --dots-color-normal: #71ABFF;
+    --dots-color-checked: #303030;
 }
 
 * {
@@ -111,7 +112,7 @@ body {
 }
 
 /* Visible input=============================== */
-.slider__navigation-items {
+.slider__navigation-dots {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -119,7 +120,7 @@ body {
     transition: all .4s ease;
 }
 
-.slider__navigation-dots {
+.slider__navigation-items {
     display: block;
     text-align: center;
     width: 1.6rem;
@@ -131,33 +132,34 @@ body {
     transition: background ease-in-out .5s;
 }
 
+
 /* Ховер для облати вокуг ====================================*/
-.slider__navigation-items:hover {
+.slider__navigation-dots:hover {
     background-color: rgba(155, 163, 174, 0.3);
 }
 
-.slider__navigation-items:hover .slider__navigation-dots {
+.slider__navigation-dots:hover .slider__navigation-items {
     background: var(--bg-color-container);
 }
 
 
 /*Checked*/
 
-#img1:checked~.slider__navigation .slider__navigation-items:nth-of-type(1) label,
-#img2:checked~.slider__navigation .slider__navigation-items:nth-of-type(2) label,
-#img3:checked~.slider__navigation .slider__navigation-items:nth-of-type(3) label,
-#img4:checked~.slider__navigation .slider__navigation-items:nth-of-type(4) label,
-#img5:checked~.slider__navigation .slider__navigation-items:nth-of-type(5) label {
+#img1:checked~.slider__navigation .slider__navigation-dots:nth-of-type(1) div,
+#img2:checked~.slider__navigation .slider__navigation-dots:nth-of-type(2) div,
+#img3:checked~.slider__navigation .slider__navigation-dots:nth-of-type(3) div,
+#img4:checked~.slider__navigation .slider__navigation-dots:nth-of-type(4) div,
+#img5:checked~.slider__navigation .slider__navigation-dots:nth-of-type(5) div {
     background: var(--bg-color-slider);
     border: 2px solid var(--dots-color-normal);
 }
 
-#img1:checked~.slider__navigation .slider__navigation-items:nth-of-type(1):hover label,
-#img2:checked~.slider__navigation .slider__navigation-items:nth-of-type(2):hover label,
-#img3:checked~.slider__navigation .slider__navigation-items:nth-of-type(3):hover label,
-#img4:checked~.slider__navigation .slider__navigation-items:nth-of-type(4):hover label,
-#img5:checked~.slider__navigation .slider__navigation-items:nth-of-type(5):hover label {
-    background: var(--bg-color-slider);
+#img1:checked~.slider__navigation .slider__navigation-dots:nth-of-type(1):hover div,
+#img2:checked~.slider__navigation .slider__navigation-dots:nth-of-type(2):hover div,
+#img3:checked~.slider__navigation .slider__navigation-dots:nth-of-type(3):hover div,
+#img4:checked~.slider__navigation .slider__navigation-dots:nth-of-type(4):hover div,
+#img5:checked~.slider__navigation .slider__navigation-dots:nth-of-type(5):hover div {
+    background: var(--dots-color-checked);
     border: 2px solid var(--bg-color-container);
 }
 
