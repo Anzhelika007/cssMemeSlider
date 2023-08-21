@@ -35,14 +35,14 @@ body {
     background-color: var(--bg-color-slider);
     margin: auto;
     overflow: hidden;
-    border: 20px solid var(--bg-color-slider);
+    border: 2rem solid var(--bg-color-slider);
     border-radius: 5px;
 }
 
 .slider {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 2rem;
     width: 100%;
 }
 
@@ -59,13 +59,13 @@ body {
 .card {
     width: 20%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
     transition: all .6 ease;
 }
 
 .image {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 /* String - Titls=================================*/
@@ -79,7 +79,7 @@ body {
 .slider__title-wrapper {
     display: flex;
     width: 500%;
-    padding: 0 0 40px 20px;
+    padding: 0 0 4rem 2rem;
 }
 
 .slider__title-text {
@@ -108,7 +108,7 @@ body {
     align-items: end;
     display: flex;
     justify-content: flex-end;
-    padding: 0 20px 40px;
+    padding: 0 2rem 4rem;
     column-gap: 0.5rem;
 }
 
@@ -128,7 +128,7 @@ body {
     height: 1.6rem;
     background: var(--dots-color-normal);
     border-radius: 50%;
-    margin: 7px;
+    margin: 0.7rem;
     line-height: 3rem;
     transition: background ease-in-out .5s;
 }
@@ -221,9 +221,6 @@ body {
     .slider__title {
         flex-basis: 100%;
         order: 3;
-
-
-        /*text-align: center;*/
     }
 
     .slider__title-text {
@@ -245,4 +242,13 @@ body {
         font-size: 1.5rem;
         font-weight: normal;
     }
+}
+
+/* Animation===========================*/
+img {
+    transition: all 2s cubic-bezier(0.77, 0.000, 0.175, 1.000);
+}
+
+.slider__title-text {
+    transition: all 2s cubic-bezier(0.77, 0.000, 0.175, 1.000);
 }
