@@ -45,7 +45,7 @@ body {
     width: 100%;
 }
 
-/* Images============================= */
+/* Images========================================= */
 .slider__img {
     order: 1;
     min-width: 500%;
@@ -67,7 +67,7 @@ body {
     border-radius: 10px;
 }
 
-/* String - Titls=============================*/
+/* String - Titls=================================*/
 .slider__title {
     flex-basis: 50%;
     order: 2;
@@ -77,7 +77,7 @@ body {
 
 .slider__title-wrapper {
     display: flex;
-    min-width: 500%;
+    width: 500%;
     padding: 0 0 40px 20px;
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 
-/*Input - Dots=============================*/
+/*Input - Dots====================================*/
 
 /* hidden*/
 .slider__input {
@@ -111,7 +111,7 @@ body {
     column-gap: 0.5rem;
 }
 
-/* Visible input=============================== */
+/* Visible input================================= */
 .slider__navigation-dots {
     width: 3rem;
     height: 3rem;
@@ -133,7 +133,7 @@ body {
 }
 
 
-/* Ховер для облати вокуг ====================================*/
+/* Hover for area around dots ====================*/
 .slider__navigation-dots:hover {
     background-color: rgba(155, 163, 174, 0.3);
 }
@@ -142,8 +142,7 @@ body {
     background: var(--bg-color-container);
 }
 
-
-/*Checked*/
+/*Checked=========================================*/
 
 #img1:checked~.slider__navigation .slider__navigation-dots:nth-of-type(1) div,
 #img2:checked~.slider__navigation .slider__navigation-dots:nth-of-type(2) div,
@@ -164,7 +163,7 @@ body {
 }
 
 
-/* State change ========================*/
+/* State change ==================================*/
 #img1:checked~.slider__img .card .image {
     margin-left: 0;
 }
