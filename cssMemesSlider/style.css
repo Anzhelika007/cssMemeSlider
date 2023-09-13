@@ -1,6 +1,6 @@
 :root {
-    --width-desctop: 1024px;
-    --width-mobail: 500px;
+    --width-desctop: 102rem;
+    --width-mobail: 50rem;
     --bg-color-body: #9BA3AE;
     --bg-color-container: #F3F3F4;
     --bg-color-slider: #25282A;
@@ -15,7 +15,7 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 0.65rem;
 }
 
 body {
@@ -25,18 +25,18 @@ body {
 
 .container {
     max-width: var(--width-desctop);
-    padding: 20px;
-    margin: 20px auto;
+    padding: 2rem;
+    margin: 2rem auto;
 }
 
 .slider__wrapper {
     width: 100%;
-    max-height: 600px;
+    max-height: 60rem;
     background-color: var(--bg-color-slider);
     margin: auto;
     overflow: hidden;
     border: 2rem solid var(--bg-color-slider);
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
 .slider {
@@ -70,7 +70,7 @@ body {
 
 /* String - Titls=================================*/
 .slider__title {
-    flex-basis: 50%;
+    flex-basis: 65%;
     order: 2;
     overflow: hidden;
     color: var(--bg-color-container);
@@ -103,7 +103,7 @@ body {
 
 .slider__navigation {
     order: 3;
-    flex-basis: 50%;
+    flex-basis: 35%;
     align-self: end;
     align-items: end;
     display: flex;
@@ -151,7 +151,7 @@ body {
 #img4:checked~.slider__navigation .slider__navigation-dots:nth-of-type(4) div,
 #img5:checked~.slider__navigation .slider__navigation-dots:nth-of-type(5) div {
     background: var(--bg-color-slider);
-    border: 2px solid var(--dots-color-normal);
+    border: 0.2rem solid var(--dots-color-normal);
 }
 
 #img1:checked~.slider__navigation .slider__navigation-dots:nth-of-type(1):hover div,
@@ -160,7 +160,7 @@ body {
 #img4:checked~.slider__navigation .slider__navigation-dots:nth-of-type(4):hover div,
 #img5:checked~.slider__navigation .slider__navigation-dots:nth-of-type(5):hover div {
     background: var(--dots-color-checked);
-    border: 2px solid var(--bg-color-container);
+    border: 0.2rem solid var(--bg-color-container);
 }
 
 
@@ -206,7 +206,7 @@ body {
 }
 
 /* Media */
-@media (max-width: 920px) {
+@media (max-width: 50rem) {
     .slider__navigation {
         order: 2;
         flex-basis: 100%;
@@ -228,14 +228,14 @@ body {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 30rem) {
     .container {
         margin: 1rem auto;
         padding: 0.5rem;
     }
 
     .slider__wrapper {
-        border: 1rem solid var(--bg-color-slider)
+        border: 1rem solid var(--bg-color-slider);
     }
 
     .slider__title-text {
