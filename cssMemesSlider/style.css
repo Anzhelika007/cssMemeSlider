@@ -135,9 +135,9 @@ body {
 
 
 /* Hover for area around dots ====================*/
-.slider__navigation-dots:hover {
+/* .slider__navigation-dots:hover {
     background-color: rgba(155, 163, 174, 0.3);
-}
+} */
 
 .slider__navigation-dots:hover .slider__navigation-items {
     background: var(--bg-color-container);
