@@ -143,6 +143,10 @@ body {
     background: var(--bg-color-container);
 }
 
+.slider__navigation-dots:active .slider__navigation-items {
+    background: var(--bg-color-body);
+}
+
 /*Checked=========================================*/
 
 #img1:checked~.slider__navigation .slider__navigation-dots:nth-of-type(1) div,
@@ -162,7 +166,6 @@ body {
     background: var(--dots-color-checked);
     border: 0.2rem solid var(--bg-color-container);
 }
-
 
 /* State change ==================================*/
 #img1:checked~.slider__img .card .image {
